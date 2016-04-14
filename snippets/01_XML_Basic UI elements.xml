@@ -1,0 +1,9 @@
+	<Label text="todos" class="title" />
+    <TextField class="new-item" />
+    <SegmentedBar class="toggles">
+        <SegmentedBar.items>
+            <SegmentedBarItem title="All" />
+            <SegmentedBarItem title="Active" />
+            <SegmentedBarItem title="Done" />
+        </SegmentedBar.items>
+    </SegmentedBar>

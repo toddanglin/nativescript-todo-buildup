@@ -1,0 +1,1 @@
+text="&#xf078;" class="{{ selectAll ? 'icon chevron chevron-bold' : 'icon chevron' }}"

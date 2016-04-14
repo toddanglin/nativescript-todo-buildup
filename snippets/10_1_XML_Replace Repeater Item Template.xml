@@ -1,0 +1,8 @@
+<StackLayout>
+	<GridLayout columns="30, *, auto" rows="auto" class="todo">
+    	<label text="{{ false ? '&#xf058;' : '&#xf1db;' }}" class="{{ completed ? 'icon circles-completed' : 'icon circles' }}" col="0" tap="check" />
+        <TextField text="{{ $value }}" col="1" class="{{ false ? 'item completed' : 'item active' }}" />
+        <Button text="&#xf00d;" col="2" tap="remove" ios:class="icon remove-button" android:class="icon remove-button button-android" />
+	</GridLayout>
+	<StackLayout class="hr"></StackLayout>
+</StackLayout>

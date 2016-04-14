@@ -1,0 +1,9 @@
+<drawer:RadSideDrawer>
+    <drawer:RadSideDrawer.mainContent>
+      <!--Put main page content here-->
+      
+    </drawer:RadSideDrawer.mainContent>
+    <drawer:RadSideDrawer.drawerContent>
+      <shared:drawerContent />
+    </drawer:RadSideDrawer.drawerContent>
+</drawer:RadSideDrawer>

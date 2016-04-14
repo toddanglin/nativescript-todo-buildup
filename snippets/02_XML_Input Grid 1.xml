@@ -1,0 +1,4 @@
+<GridLayout columns="30, *" rows="auto" class="new-item">
+	<label text="[Select]" col="0" />
+	<TextField class="new-item" col="1"/>
+</GridLayout>

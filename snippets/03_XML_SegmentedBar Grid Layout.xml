@@ -1,0 +1,11 @@
+<GridLayout columns="80, *, 160" class="todo" rows="auto, auto">
+                    <Label text="0 Items Left" col="0" />
+                    <Button text="Clear Completed" col="2" />
+                    <SegmentedBar row="1" colspan="3" class="toggles">
+                        <SegmentedBar.items>
+                            <SegmentedBarItem title="All" />
+                            <SegmentedBarItem title="Active" />
+                            <SegmentedBarItem title="Done" />
+                        </SegmentedBar.items>
+                    </SegmentedBar>
+                </GridLayout>
