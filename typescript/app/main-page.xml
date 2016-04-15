@@ -1,0 +1,45 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+  xmlns:shared="shared" 
+  xmlns:drawer="nativescript-telerik-ui/sidedrawer" 
+  navigatingTo="onNavigatingTo" backgroundSpanUnderStatusBar="true">
+    <drawer:RadSideDrawer>
+        <drawer:RadSideDrawer.mainContent>
+            <StackLayout class="main">
+                <Label text="todos" class="title" />
+                <GridLayout columns="30, *" rows="auto" class="new-item">
+                    <label text="&#xf078;" class="{{ selectAll ? 'icon chevron chevron-bold' : 'icon chevron' }}" col="0" />
+                    <TextField text="{{ newTodo }}" returnKeyType="done" returnPress="{{ add }}" class="new-item" col="1" />
+                </GridLayout>
+                <StackLayout class="hr-bold" />
+                <Repeater items="{{ todos }}">
+                    <Repeater.itemTemplate>
+                        <StackLayout>
+                            <GridLayout columns="30, *, auto" rows="auto" class="todo">
+                                <label text="{{ false ? '&#xf058;' : '&#xf1db;' }}" class="{{ completed ? 'icon circles-completed' : 'icon circles' }}" col="0" tap="check" />
+                                <TextField text="{{ $value }}" col="1" class="{{ false ? 'item completed' : 'item active' }}" />
+                                <Button text="&#xf00d;" col="2" tap="remove" ios:class="icon remove-button" android:class="icon remove-button button-android" />
+                            </GridLayout>
+                            <StackLayout class="hr" />
+                        </StackLayout>
+                    </Repeater.itemTemplate>
+                </Repeater>
+                <GridLayout columns="80, *, 160" class="todo" rows="auto, auto">
+                    <Label text="{{ total() + ' total' }}" col="0" />
+                    <Button text="Clear Completed" tap="{{ clearCompleted }}" col="2" />
+                    <SegmentedBar row="1" colspan="3" class="toggles">
+                        <SegmentedBar.items>
+                            <SegmentedBarItem title="All" />
+                            <SegmentedBarItem title="Active" />
+                            <SegmentedBarItem title="Done" />
+                        </SegmentedBar.items>
+                    </SegmentedBar>
+                </GridLayout>
+                <StackLayout class="hr" />
+                <shared:stacked-pages />
+            </StackLayout>
+        </drawer:RadSideDrawer.mainContent>
+        <drawer:RadSideDrawer.drawerContent>
+            <shared:drawerContent />
+        </drawer:RadSideDrawer.drawerContent>
+    </drawer:RadSideDrawer>
+</Page>

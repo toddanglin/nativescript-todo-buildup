@@ -4,3 +4,5 @@ platforms/
 tmp/
 .DS_Store
 .vscode
+typescript/**/*.js
+typescript/**/*.map
