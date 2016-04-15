@@ -3,7 +3,7 @@
         <Label text="TODO App" />
     </StackLayout>
     <StackLayout cssClass="drawerMenuContent">
-        <Label text="About" />
+        <Label text="About" tap="{{ navigate }}" />
         <Label text="Send Feedback" />
     </StackLayout>
 </StackLayout>

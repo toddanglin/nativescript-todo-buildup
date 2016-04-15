@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+  backgroundSpanUnderStatusBar="true">
+  <Page.actionBar>
+    <ActionBar title="About">
+      <NavigationButton text="go back" android.systemIcon = "ic_menu_back"/>
+    </ActionBar>
+  </Page.actionBar>
+  <StackLayout>
+    <Label text="This is a demo todo app. That's it." />
+  </StackLayout>
+</Page>
