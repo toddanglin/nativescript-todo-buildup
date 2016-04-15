@@ -4,9 +4,9 @@ import { Page } from 'ui/page';
 
 var viewModel = new MainViewModel();
 
-let onNavigatedTo = (args: EventData) => {
+let onNavigatingTo = (args: EventData) => {
     var page = <Page>args.object;
     page.bindingContext = viewModel;
 }
 
-export { onNavigatedTo }
+export { onNavigatingTo }
