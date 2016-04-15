@@ -1,8 +1,0 @@
-{
-	"nativescript": {
-		"id": "org.nativescript.nativescripttodobuildup"
-	},
-	"dependencies": {
-		"tns-core-modules": "1.7.1"
-	}
-}
