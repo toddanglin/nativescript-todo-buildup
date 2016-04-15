@@ -1,0 +1,22 @@
+
+<StackLayout class="main">
+    <Label text="todos" class="title"></Label>
+    <TextField [(ngModel)]="newTodoText" returnKeyType="done" (returnPress)="add()" class="new-item" col="1"></TextField>
+    <StackLayout class="hr-bold"></StackLayout>
+    <StackLayout *ngFor="#todo of todoStore.todos">
+        <GridLayout columns="auto, *, auto" rows="auto" class="todo">
+            <Button text="&#xf1db;" col="0" class="icon circles"></Button>
+            <TextField [text]="todo" col="1" #editedTodo (returnPress)="updateEditingTodo(todo, editedTodo.text)"></TextField>
+            <Button text="&#xf00d;" col="2" (tap)="remove(todo)" class="icon remove-button"></Button>
+        </GridLayout>
+        <StackLayout class="hr"></StackLayout>
+    </StackLayout>
+    <GridLayout columns="80, *, 160" class="todo" rows="auto, auto">
+        <Label text="{{ todoStore.todos.length + ' total' }}" col="0"></Label>
+        <Label text="Clear Completed" (tap)="todoStore.clearComplete()" col="2" class="clear-completed"></Label>
+        <SegmentedBar row="1" colspan="3" class="toggles">
+        </SegmentedBar>
+    </GridLayout>
+    <StackLayout class="hr"></StackLayout>
+</StackLayout>
+      
