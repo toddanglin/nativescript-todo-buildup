@@ -5,7 +5,7 @@
     <drawer:RadSideDrawer>
         <drawer:RadSideDrawer.mainContent>
             <StackLayout class="main">
-                <Label text="todos" class="title" />
+                <Label text="todos" class="title" id="todoTitle" />
                 <GridLayout columns="30, *" rows="auto" class="new-item">
                     <label text="&#xf078;" class="{{ selectAll ? 'icon chevron chevron-bold' : 'icon chevron' }}" col="0" />
                     <TextField text="{{ newTodo }}" returnKeyType="done" returnPress="{{ add }}" class="new-item" col="1" />
