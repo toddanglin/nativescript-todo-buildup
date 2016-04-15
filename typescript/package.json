@@ -1,19 +1,19 @@
 {
-  "nativescript": {
-    "id": "org.nativescript.nativescripttodobuildup",
-    "tns-ios": {
-      "version": "1.7.0"
-    },
-    "tns-android": {
-      "version": "1.7.1"
-    }
-  },
-  "dependencies": {
-    "nativescript-telerik-ui": "^1.0.1",
-    "tns-core-modules": "1.7.1"
-  },
-  "devDependencies": {
-    "nativescript-dev-typescript": "^0.3.1",
-    "typescript": "^1.8.10"
-  }
+	"nativescript": {
+		"id": "org.nativescript.nativescripttodobuildup",
+		"tns-ios": {
+			"version": "1.7.0"
+		},
+		"tns-android": {
+			"version": "1.7.1"
+		}
+	},
+	"dependencies": {
+		"nativescript-telerik-ui": "^1.0.1",
+		"tns-core-modules": "1.7.1"
+	},
+	"devDependencies": {
+		"nativescript-dev-typescript": "^0.3.1",
+		"typescript": "^1.8.10"
+	}
 }
