@@ -3,6 +3,6 @@ node_modules/
 platforms/
 tmp/
 .DS_Store
-.vscode
+#.vscode
 typescript/**/*.js
 typescript/**/*.map
