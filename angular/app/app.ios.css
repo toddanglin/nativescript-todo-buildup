@@ -1,0 +1,11 @@
+Button {
+    background-color: white;
+    border-width: 1;
+    border-color: white;
+}
+
+.icon {
+    padding: 0;
+    margin: 0;
+    width: 30;
+}
